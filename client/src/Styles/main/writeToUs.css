@@ -1,0 +1,24 @@
+@media screen and (max-width: 420px) {
+  .support {
+    background-color: rgba(255, 255, 255, 0.916);
+    border-top-right-radius: 56px;
+    border-bottom-left-radius: 56px;
+    margin: 30px;
+  }
+}
+
+.questions {
+  font-size: 64px;
+  line-height: 74px;
+  color: #000000;
+  margin: 136px 0px 0px 76px;
+}
+
+.write-us {
+  font-size: 56px;
+  line-height: 64px;
+  color: #000000;
+  text-align: center;
+
+  margin-top: 40px;
+}

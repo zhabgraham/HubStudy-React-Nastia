@@ -1,0 +1,325 @@
+p {
+  margin: 0;
+}
+
+.container-profileStudent {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.container-profileStudent a {
+  color: #9a9fff;
+}
+
+.under-header {
+  position: fixed;
+  width: 100%;
+  height: 35vh;
+  background: #9a9fff;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.nameSurname {
+  display: flex;
+  flex-direction: row !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.nameStudent,
+.surnameStudent {
+  font-size: 36px;
+  line-height: 41px;
+}
+
+.under-header div p {
+  font-size: 24px;
+  line-height: 28px;
+  color: #fcfcfc;
+}
+
+.changeProfile {
+  background: #FFDF3A;
+  border-radius: 1000px;
+  width: 199px;
+  height: 41px;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.container-profileStudent .sidebar {
+  height: 100%;
+  background-color: #e2e4ff;
+  border-radius: 1000px;
+  margin-left: 39px;
+  margin-top: 110px;
+  padding: 0;
+}
+
+.container-profileStudent .content-sidebar {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+.under-header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.under-header {
+  padding: 0 200px 30px 400px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.function-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.function {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.function-btn,
+.contactStudent-btn {
+  background: #9a9fff;
+  border-radius: 0px 1000px 1000px 0px;
+  width: 150px;
+  height: 32px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 24px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.reminder-profile,
+.notes-profile,
+.chat-profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-left: 25px;
+}
+
+.reminder-profile p,
+.notes-profile p,
+.chat-profile p,
+.contact-student div p {
+  margin: 0;
+  font-size: 20px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.contact-student {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+  margin-left: 25px;
+}
+
+.mainSection-student {
+  padding-left: 350px;
+  padding-top: 312px;
+}
+
+.sections-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 45px;
+  margin-left: 50px;
+}
+@media screen and (max-width: 420px) {
+  .sections-profile {
+    margin-left: 0;
+  }
+  .myLessons-student {
+    margin:  0 auto;
+  }
+  .block-lessons {
+    flex-wrap: wrap;
+  }
+  .mytasks-student {
+    margin-bottom: 50px;
+  }
+}
+
+.myLessons-student,
+.mytasks-student {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 48px;
+}
+
+.myLessons-btn {
+  width: 404px;
+  height: 82px;
+  background: #9A9FFF;
+  border-radius: 1000px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 32px;
+  line-height: 37px;
+  color: #ffffff;
+}
+
+.block-lessons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 50px;
+}
+
+.item-lessons {
+  padding: 10px;
+  background: #E2E4FF;
+  border-radius: 16px;
+  width: 379px;
+  height: 523px;
+}
+
+.about-lesson {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.title-lesson {
+  margin-top: 20px;
+}
+
+.durationPrice {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.durationPrice div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.title-lesson {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.description-lesson {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.block-tasks {
+  width: 991px;
+  height: 265px;
+  background: rgba(222, 224, 255, 0.7);
+  border-radius: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-tasks {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.item-tasks div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .container-profileStudent .sidebar {
+    margin-left: 0;
+    background-color: #FFC296;
+    z-index: 1000;
+  }
+
+  .under-header {
+    background-color: rgb(255, 138, 48);
+  }
+
+  body {
+    background: white;
+  }
+
+  .myLessons-btn {
+    background: rgb(255, 138, 48);
+  }
+
+  .item-lessons {
+    background: rgb(255 219 193);
+  }
+
+  .block-tasks {
+    background: rgb(255 219 193);
+    width: 750px;
+  }
+
+  .container-profileStudent a {
+    color: rgb(255, 102, 0);
+  }
+
+  .function-btn,
+  .contactStudent-btn {
+    background: rgb(255, 138, 48);
+  }
+
+  .contact-student {
+    margin-left: 0;
+  }
+}

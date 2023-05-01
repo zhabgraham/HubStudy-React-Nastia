@@ -1,0 +1,355 @@
+.buttons-mentorPage {
+}
+
+.bodyMentorSphere {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.bodyMentorSphere .bg-light {
+  margin: 16px 36px 0px 100px;
+}
+
+@media screen and (max-width: 1440px) {
+  .bodyMentorSphere .bg-light {
+    margin: 16px 18px 0px 14px;
+    width: 100%;
+  }
+}
+
+.container_mentorPage, .container_spherePage {
+  display: flex;
+  flex-direction: row;
+
+  flex: 1 1 auto;
+}
+
+.sidebar {
+  width: 300px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  padding-top: 100px;
+}
+
+.filter-title {
+  text-align: center;
+}
+
+.wrapper-sidebar {
+
+}
+
+.header-price, .header-experience, .header-group, .header-sphere {
+  background-color: #939BFF;
+  border-radius: 10px;
+
+  padding: 10px;
+  margin: 10px;
+}
+
+.price-title, .experience-title, .group-title, .sphere-title {
+  text-align: center;
+
+  margin-bottom: 7px;
+}
+
+.price-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.span-field {
+  font-size: 20px;
+}
+
+.input-min, .input-max {
+  width: 70px;
+  border-radius: 10px;
+
+  text-align: center;
+  margin: 7px 10px 0;
+}
+
+.group-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.group-label {
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+.submit-group {
+  margin: 10px 70px 0;
+
+  background-color: #939BFF;
+  width: 150px;
+  height: 40px;
+  border-radius: 12px;
+  font-size: 18px;
+}
+
+.bodyMentorSphere .selection-form {
+  width: 100%;
+}
+
+.main {
+  background: url('../../img/mentorSphere.png');
+  background-position: top right;
+  background-repeat: no-repeat;
+  flex: 1;
+  padding-left: 300px;
+  height: 3944px;
+}
+
+.container__Mentor, .container__sphere {
+  max-width: 970px;
+  margin: 0 auto;
+}
+
+.title-mentorPage, .title-spherePage {
+  font-size: 64px;
+  line-height: 74px;
+  color: #000000;
+  text-align: center;
+
+  padding-top: 124px;
+  margin-bottom: 24px;
+}
+
+.paragraph-mentorPage, .paragraph-spherePage {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.buttons-mentorPage, .buttons-spherePage{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 52px 150px 32px 150px;
+}
+
+.button-mentorPage {
+  width: 200px;
+  height: 45px;
+  border-radius: 1000px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.rating-button {
+  background: #939BFF;
+}
+
+.rating-button:hover {
+  background: #FFFFFF;
+  transition: 1.2s;
+}
+
+.sphere-button {
+  background: #FFFFFF;
+}
+
+.sphere-button:hover {
+  background: #939BFF;
+  transition: 1.2s;
+}
+
+.mentor-list {}
+
+.mentor-item {
+  max-width: 969px;
+  margin-bottom: 40px;
+
+  display: flex;
+  flex-direction: row;
+  
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  height: 443px;
+}
+
+.mentor-photo {}
+
+.mentor-info {
+  flex: 1;
+  padding: 44px 70px 60px 48px; 
+}
+
+.mentor-description {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mentor-name {
+  font-size: 28px;
+  line-height: 32px;
+  color: #000000;
+
+  margin: 0px;
+}
+
+.mentor-sphere {
+  font-size: 24px;
+  line-height: 28px;
+  color: #160033;
+
+  margin: 0px;
+}
+
+.mentor-cons-list {
+  display: flex;
+  flex-direction: column;
+  margin: 38px 0px;
+}
+
+.mentor-cons-list li {
+  position: relative;
+  padding: 5px 15px;
+}
+
+.mentor-cons-list li::before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #6D6D6D;
+  bottom: 13px;
+  left: 0px;
+  position: absolute;
+}
+
+.mentor-cons-item {
+  font-size: 24px;
+  line-height: 28px;
+  color: #6D6D6D
+}
+
+.buttons-mentor-list {
+  margin-top: 48px;
+}
+
+.footer-mentor {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: calc(100% - 300px);
+}
+
+@media screen and (min-width:1440px) {
+  .bodyMentorSphere .footer {
+    padding: 0px 40px 20px 40px;
+  
+    font-size: 24px;
+  } 
+}
+
+.bodyMentorSphere .link-page {
+  font-size: 24px;
+}
+
+.bodyMentorSphere .block ul li {
+  margin-bottom: 16px;
+}
+
+.bodyMentorSphere #comment {
+  height: 80px;
+}
+
+.bodyMentorSphere .submit-button {
+  margin-top: 20px;
+}
+
+.bodyMentorSphere .margin-zero {
+  margin-bottom: 0px !important;
+}
+
+.bodyMentorSphere .block-heading, .title-social {
+  margin-bottom: 16px;
+}
+
+@media screen and (max-width: 420px) {
+  .main {
+    background: rgb(255, 138, 48);
+  }
+  .header-price, .header-experience, .header-group, .header-sphere {
+    background: rgb(255, 138, 48);
+  }
+  .submit-group {
+    background: rgb(255, 138, 48);
+  }
+  .mentors-photo {
+    width: 300px;
+    border-radius: 12px;
+    padding-left: 30px;
+  }
+  .mentor-item {
+   background:rgba(255, 255, 255, 0.916);
+   margin: 20px;
+  }
+  .mentor-cons-item {
+    color: rgb(75, 75, 75);
+  }
+  .mentor-photo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .mentor-info {
+    padding: 44px 35px 30px 30px;
+  }
+  .buttons-mentor-list {
+    margin-top: 20px;
+    display: flex;
+  }
+  .bodyMentorSphere .startStudying {
+    margin-right: 10px;
+    width: 180px;
+  }
+  .bodyMentorSphere .about {
+    width: 180px;
+  }
+  .bodyMentorSphere .footer {
+    width: 780px;
+    padding-left: 30px ;
+  }
+  .rating-button {
+    background-color: #FFE146;
+  }
+  .rating-button:hover {
+    background-color: white;
+    transition: 1.2s;
+  }
+  .sphere-button {
+    background-color: #ffffff;
+  }
+  .sphere-button:hover {
+    background-color: #FFE146;
+    transition: 1.2s;
+  }
+}

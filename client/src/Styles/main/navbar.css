@@ -1,0 +1,131 @@
+.navbar-menu {
+  width: 100%;
+  max-width: 1440px;
+
+  position: fixed;
+  border-radius: 16px;
+  z-index: 1000;
+}
+
+.justify-content-end {
+  align-items: center;
+}
+
+.nav-link,
+.menu-item {
+  color: #000000 !important;
+}
+
+.nav-item {
+  margin-right: 44px;
+  font-size: 18px;
+}
+
+.bg-light {
+  margin: 16px 18px 0px 14px;
+  padding: 0px 56px 0px 73px;
+  max-height: 72px;
+
+  background: rgba(243, 244, 255, 0.65) !important;
+  border-radius: 16px;
+}
+
+.sign-in {
+  font-size: 18px;
+  line-height: 22px;
+  background: rgba(243, 244, 255, 0.0);
+  margin-right: 44px;
+
+  color: #000000;
+}
+
+.sign-up {
+  width: 186x;
+  height: 46px;
+  background-color: #FFFFFF;
+  border-radius: 1000px;
+  padding: 12px 17px 12px 16px;
+  margin-right: 44px;
+  font-size: 18px;
+}
+
+.logout {
+  width: 186x;
+  height: 46px;
+  background-color: #FFFFFF;
+  border-radius: 1000px;
+  padding: 12px 17px 12px 16px;
+  margin-right: 44px;
+  font-size: 18px;
+}
+
+.profilePic {
+  font-size: 18px;
+  line-height: 22px;
+  background: rgba(243, 244, 255, 0.0);
+  margin-right: 44px;
+
+  color: #000000;
+}
+
+.bg-btn {
+  background: linear-gradient(180deg, #BAB9FF 0%, #FFFFFF 100%);
+}
+
+.sign-up:hover {
+  background-color: #9A9FFF;
+  transition: 1.2s;
+}
+
+@media screen and (max-width: 1200px) {
+  .sign-up {
+    background-color: #FFE146;
+  }
+
+  .offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    flex-grow: 0;
+    overflow: visible;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .offcanvas-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .bg-light {
+    background-color: rgba(255, 255, 255, 0.644) !important;
+  }
+
+  .container-fluid {
+    position: relative;
+    height: 72px;
+  }
+
+  .navbar-brand img {
+    position: absolute;
+    top: -2px;
+    left: 0px;
+    width: 100px;
+    height: 70px;
+  }
+  .nav-item {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .offcanvas-body {
+    padding-left: 50px;
+  }
+  .sign-in, .sign-up {
+    margin-bottom: 10px;
+  }
+}

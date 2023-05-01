@@ -1,0 +1,198 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+.form-sign-in html body{
+  height: 100%;
+}
+
+.form-sign-in .justify-content-end {
+  align-items: center;
+}
+
+.wrapper_sign-in {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.form-sign-in #email {
+  width: 500px;
+}
+
+.form-sign-in {
+  background-color: #BAB9FF;
+  height: 715px;
+  font-family: 'Ubuntu';
+}
+
+
+.form-sign-in .header {
+  width: 100%;
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px;
+  background: rgba(243, 244, 255, 0.65);
+  border-radius: 16px;
+}
+
+.form-sign-in .logo{
+  margin-left: 72px;
+  margin-right:44px;
+  height: 50px;
+}
+
+
+.form-sign-in a{
+  color:rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.form-sign-in h2{
+margin: 0;
+margin-bottom: 24px; 
+text-align: center;
+font-weight: normal;
+font-size: 64px;
+padding-top: 50px;
+}
+
+.form-sign-in h3{
+  margin: 0;
+  text-align: center;
+  font-weight: normal;
+  font-size: 24px;
+
+} 
+
+.text {
+  font-size: 18px;
+}
+
+.form-sign-in .titles{
+padding: 24px;
+padding-top: 48px;
+font-size: 24px;
+text-align: center;
+font-weight: normal;
+}
+
+
+.form-sign-in .label-input{
+  position: relative;
+  color: rgb(255, 255, 255);
+  margin-top: 12px;
+}
+
+.form-sign-in .form{
+  max-width: 525px;
+  margin: 0 auto;  
+  display: flex;
+  flex-direction: column;
+}
+
+.form-sign-in .input-sign-in {
+  position: relative;
+  margin-top: 12px;
+  width: 500px;
+  padding: 14px 38px;
+  box-sizing: border-box;
+  border-radius: 1000px;
+  font-size: 24px;
+  background-color: white;
+  text-decoration: #a7a7a7;
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  outline: none;
+  transition: all .2s;
+}
+
+.form-sign-in .input:focus{
+border: 2px solid #9868ff;
+}
+
+.form-sign-in .input::placeholder{
+  font-size: 24px;
+  opacity: 0;
+  transition: all .3s;
+}
+
+.form-sign-in .input:focus::placeholder {
+  opacity: 1;
+  animation-delay: 0.2s ;
+}
+
+.form-sign-in .log-in{
+  margin: 40px 0;
+  background-color: #FFE146;
+  border: none;
+  border-radius: 1000px;
+  padding: 12px 64px;
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: pointer;
+}
+
+.form-sign-in .log-in:hover{
+  background-color: #FFEF99;
+  color:#646464;
+}
+
+.form-sign-in #forgot{
+  margin: 49px;
+  background-color: #ffffff00;
+  padding: 15px;
+}
+
+
+.form-sign-in #not-registered:hover{
+  color: rgb(255, 255, 255);
+ }
+
+.form-sign-in a.button-reg {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  position:relative;
+  text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  border: 2px solid black;
+  border-radius: 1000px;
+  margin: 0px 80px;
+  text-align: center;
+  bottom: 12px;
+}
+
+.form-sign-in .bottom-elem{
+  max-width: 420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-sign-in .button-reg{
+  font-size: 18px;
+  padding: 10px;
+  width: 200px;
+  height: 40px;
+  border-radius: 24px;
+  border: 1px solid black;
+  background: transparent;
+} 
+
+.form-sign-in .button-reg:hover{
+  background-color: white;
+ color: #646464;
+  border-color: #646464;
+  transition: 1.2s;
+}
+
+.form-sign-in form {
+  position: relative;
+}
+
+@media screen and (max-width: 420px) {
+  .form-sign-in {
+    background-color: rgb(255, 138, 48);
+  }
+}
