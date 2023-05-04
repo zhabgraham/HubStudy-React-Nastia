@@ -8,6 +8,6 @@ router.get("/", getAllStudents);
 router.get('/:id', getStudent);
 //router.post('/', createNewUser);
 router.post('/login', login)
-router.patch('/student/:userId', profileStudent);
+router.patch('/:userId', profileStudent);
 
 export default router;

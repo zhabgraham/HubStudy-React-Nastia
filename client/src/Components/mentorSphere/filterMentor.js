@@ -1,8 +1,13 @@
+import { useNavigate } from "react-router-dom";
 import mentorPhoto from "../../img/mentor-photo-1.png";
 import mentorRating from "../../img/Stars_rate.png";
+import { useSelector } from "react-redux";
 
 
-const FilterMentor = ({name, description, qualification}) => {
+const FilterMentor = ({name, description, qualification, mentorId}) => {
+    const navigate = useNavigate();
+    const user = useSelector((state) => state.user);
+    const userId = user._id;
     return (
         <>
           <div className="mentor-item">
@@ -29,7 +34,7 @@ const FilterMentor = ({name, description, qualification}) => {
                     <img src={mentorRating}></img>
                   </div>
                   <div className="buttons-mentor-list">
-                    <button className="startStudying">Почати навчання</button>
+                    <button onClick={() => navigate(`/start-study/${mentorId}`)} className="startStudying">Почати навчання</button>
                     <button className="about">Детальніше</button>
                   </div>
                 </div>

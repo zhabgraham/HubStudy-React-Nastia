@@ -8,7 +8,7 @@ import iconPencil from "../../img/pencil-icon.png";
 import reminderIcon from "../../img/reminder-icon.png";
 import reminderIconWithout from "../../img/without-sound.png";
 import swimming from "../../img/swimming.png";
-import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import axios from 'axios'
 
 
@@ -23,9 +23,10 @@ import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 
 const profileStudentRedo = () => {
-  const { userId } = useParams();
+  const user = useSelector((state) => state.user);
+  const userId = user._id;
   const [formData, updateFormData] = useState(initialValues);
-  const [user, setUser] = useState({});
+  const [setUser] = useState({});
 
   const handleChange = (e) => {
     updateFormData({
@@ -125,11 +126,11 @@ const profileStudentRedo = () => {
             <div className="function-btn">Контакти</div>
               <div className="reminder-loudness">
                 <div>
-                <input type="email" onChange={handleChange} id="emailStudent-input" placeholder="mentorivna1986@gmail.com" className="emailStudent"></input>
+                <input type="email" onChange={handleChange} name="email" id="emailStudent-input" placeholder="mentorivna1986@gmail.com" className="emailStudent"></input>
                 <img src={iconPencil}></img>
                 </div>
                 <div>
-                <input type="email" onChange={handleChange} id="emailStudent-input" placeholder="mentorivna1986@gmail.com" className="emailStudent"></input>
+                <input type="email" /*onChange={handleChange}*/ name="email2" id="emailStudent-input" placeholder="mentorivna1986@gmail.com" className="emailStudent"></input>
                 <img src={iconPencil}></img>
                 </div>
               </div>

@@ -45,13 +45,14 @@ const FilterMentors = ({formData}) => {
         <>
             {mentor.map(
                 ({
+                    _id,
                     firstName,
                     lastName,
                     description,
                     qualification
                 }) => (
 
-                            <FilterMentor name={`${firstName} ${lastName}`}
+                            <FilterMentor mentorId={_id} name={`${firstName} ${lastName}`}
                                         description={description}
                                         qualification={qualification}/>
                 )
