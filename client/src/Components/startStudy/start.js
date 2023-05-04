@@ -57,7 +57,7 @@ const StartStudy = () => {
       getUser();
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
   
-    //getUser();
+    getUser();
     const {
       firstName,
       lastName,

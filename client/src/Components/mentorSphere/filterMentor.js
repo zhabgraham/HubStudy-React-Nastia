@@ -34,8 +34,8 @@ const FilterMentor = ({name, description, qualification, mentorId}) => {
                     <img src={mentorRating}></img>
                   </div>
                   <div className="buttons-mentor-list">
-                    <button onClick={() => navigate(`/start-study/${mentorId}`)} className="startStudying">Почати навчання</button>
-                    <button className="about">Детальніше</button>
+                    <button className="startStudying">Почати навчання</button>
+                    <button onClick={() => navigate(`/start-study/${userId}`)} className="about">Детальніше</button>
                   </div>
                 </div>
               </div>
