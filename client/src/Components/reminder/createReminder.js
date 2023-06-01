@@ -6,10 +6,16 @@ import notesIcon from "../../img/Нотатки (1).png";
 import person from "../../img/person.png"
 
 import React, { useState } from 'react';
+<<<<<<< HEAD
 import { Link, useNavigate } from 'react-router-dom';
 import axios from "axios";
 import { useSelector } from "react-redux";
 import iconMenu from "../../img/icon-menu.png";
+=======
+import { Link } from 'react-router-dom';
+import axios from "axios";
+import { useSelector } from "react-redux";
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 const initialValues = {
   recieverId: "",
@@ -22,9 +28,13 @@ const initialValues = {
 
 const CreateReminder = () => {
 
+<<<<<<< HEAD
   const navigate = useNavigate();
   const user = useSelector((state) => state.user);
   const status = useSelector((state) => state.status)
+=======
+  const user = useSelector((state) => state.user);
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   const userId = user._id;
 
   const [formData, updateFormData] = useState(initialValues);
@@ -63,8 +73,11 @@ const CreateReminder = () => {
       console.log(error);
     });
     console.log(formData);
+<<<<<<< HEAD
 
     navigate('/view-reminders')
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   };
 
 
@@ -77,6 +90,7 @@ const CreateReminder = () => {
 <div className="createReminder-wrapper">
 
        <div className="left-side">
+<<<<<<< HEAD
         <div className="avatar">
             {status == "student" && (
               <button className="button-avatar" onClick={() => navigate(`/profile-student/${userId}`)}>
@@ -92,6 +106,11 @@ const CreateReminder = () => {
         </div>
         <Link to="/view-reminders"><img src={reminderIcon}></img></Link>
         <Link to="/view-notes"><img src={notesIcon}></img></Link>
+=======
+        <img src={person}></img>
+        <img src={reminderIcon}></img>
+        <img src={notesIcon}></img>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
         <img src={chatIcon}></img>
       </div>
 

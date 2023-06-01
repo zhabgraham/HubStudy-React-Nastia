@@ -23,7 +23,10 @@ const CreateNotes = () => {
 
   const navigate = useNavigate();
   const user = useSelector((state) => state.user);
+<<<<<<< HEAD
   const status = useSelector((state) => state.status)
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   const userId = user._id;
 
   const [formData, updateFormData] = useState(initialValues);
@@ -73,6 +76,7 @@ const CreateNotes = () => {
   <div className="menu-section-create">
           <div className="menu-create">
             <div className="avatar">
+<<<<<<< HEAD
             {status == "student" && (
               <button className="button-avatar" onClick={() => navigate(`/profile-student/${userId}`)}>
                 <img className="avatar-icon" src={iconMenu} alt="icon menu"></img>
@@ -87,6 +91,14 @@ const CreateNotes = () => {
             </div>
             <div className="icon-wrapper">
               <Link to="/view-reminders">
+=======
+            <button onClick={() => navigate(`/profile-student/${userId}`)}>
+              <img className="avatar-icon" src={iconMenu} alt="icon menu"></img>
+             </button>
+            </div>
+            <div className="icon-wrapper">
+              <Link to="#">
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
               <div className="bell"></div>
               </Link>
             </div>

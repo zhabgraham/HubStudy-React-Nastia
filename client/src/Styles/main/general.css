@@ -19,7 +19,11 @@
   flex-direction: column;
 }
 
+<<<<<<< HEAD
 .body, .container_registration, .mentor-page, .bodyMentorSphere, .blog-page, .container-profileStudent, .container-profileStudentRedo, .reminder-wrapper {
+=======
+.body, .container_registration, .mentor-page, .bodyMentorSphere {
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   font-family: 'Ubuntu';
   font-weight: 400;
   font-size: 24px;
@@ -44,4 +48,8 @@ html, body {
   html {
     width:850px;
   }
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d

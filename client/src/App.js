@@ -47,11 +47,17 @@ import ProfileMentor from "./Components/profile/profileMentor.js";
 import ProfileMentorRedo from "./Components/profile/profileMentorRedo.js";
 import ViewReminder from "./Components/reminder/viewReminder.js";
 import CreateReminder from "./Components/reminder/createReminder.js";
+<<<<<<< HEAD
 import AboutStudy from "./Components/startStudy/about.js";
 import StartStudy from "./Components/startStudy/start.js"
 import Chat from "./Components/chat/chat.js"
 
 import TestPage from "./Components/text.js"
+=======
+import FilterMentor from "./Components/mentorSphere/FilterMentors.js";
+import TestPage from "./Components/text.js"
+import StartStudy from "./Components/startStudy/start.js"
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 
 function App() {
@@ -64,7 +70,11 @@ function App() {
     // </Router>
     <BrowserRouter>
       <Routes>
+<<<<<<< HEAD
         <Route path='/' element={<HomePage/>}/>
+=======
+      <Route path='/' element={<HomePage/>}/>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
         <Route path="/registration" element={<RegistrationPage/>} />
         <Route path="/mentorship" element={<RegistrationPageTwo/>} />
         <Route path="/student" element={<RegistrationPage/>} />
@@ -75,14 +85,20 @@ function App() {
         <Route path="/profile-student-redo" element={<ProfileStudentRedo/>} />
         <Route path="/profile-mentor/:userId" element={<ProfileMentor/>} />
         <Route path="/profile-mentor-redo" element={<ProfileMentorRedo/>} />
+<<<<<<< HEAD
         <Route path="/chat/:userId" element={<Chat/>} />
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
         <Route path="/sphere" element={<SpherePage/>} />
         <Route path="/blog" element={<BlogPage/>} />
         <Route path="/create-notes" element={<CreateNotes/>} />
         <Route path="/view-notes" element={<ViewNotes/>} />
         <Route path="/view-reminders" element={<ViewReminder/>} />
         <Route path="/create-reminder" element={<CreateReminder/>} />
+<<<<<<< HEAD
         <Route path="/about-study/:mentorId" element={<AboutStudy/>} />
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
         <Route path="/start-study/:userId" element={<StartStudy/>} />
         <Route path="/text" element={<TestPage />} />
       </Routes>

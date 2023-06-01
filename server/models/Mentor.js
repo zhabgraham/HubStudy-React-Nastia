@@ -69,10 +69,14 @@ const MentorSchema = new mongoose.Schema(
         groupLessons: {
             type: Boolean,
             default: true,
+<<<<<<< HEAD
         },
         student: [
             { type: mongoose.Schema.Types.ObjectId, ref: 'Student' }
         ]
+=======
+        }
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     }, {
         toJSON: {
           virtuals: true,
@@ -92,6 +96,7 @@ MentorSchema.virtual('blogs', {
     justOne: false
   });
 
+<<<<<<< HEAD
   MentorSchema.virtual('lessons', {
     ref: 'Lessons',
     localField: '_id',
@@ -99,6 +104,8 @@ MentorSchema.virtual('blogs', {
     justOne: false
   });
 
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 const Mentor = mongoose.model("Mentor", MentorSchema);
 

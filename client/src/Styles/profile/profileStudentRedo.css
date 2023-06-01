@@ -252,7 +252,11 @@ p {
   color: #ffffff;
 }
 
+<<<<<<< HEAD
 .block-lessons-redo {
+=======
+.block-lessons {
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   display: flex;
   flex-direction: row;
   justify-content: center;

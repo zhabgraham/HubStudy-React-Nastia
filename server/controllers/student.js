@@ -71,6 +71,7 @@ export const getStudent = async (req, res) => {
 export const profileStudent = async (req, res) => {
     try {
       const {
+<<<<<<< HEAD
             firstName,
             lastName,
             email,
@@ -84,8 +85,27 @@ export const profileStudent = async (req, res) => {
             email,
       }, { new: true });
 
+=======
+        firstName,
+            lastName,
+            email,
+      } = req.body;
+      
+      const userId = req.params.userId;
+  
+      const updatedUser = await Student.findByIdAndUpdate(userId, {
+        firstName,
+            lastName,
+            email,
+      }, { new: true });
+  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
       res.status(200).json(updatedUser);
     } catch (err) {
       res.status(500).json({ error: err.message });
     }
+<<<<<<< HEAD
   };
+=======
+  };  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d

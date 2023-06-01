@@ -1,5 +1,8 @@
 import Mentor from "../models/Mentor.js";
+<<<<<<< HEAD
 import Student from "../models/Student.js";
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 import jwt  from "jsonwebtoken";
 import bcrypt from "bcrypt"
 
@@ -89,7 +92,11 @@ export const createNewMentor = async (req, res) => {
 export const login = async (req, res) => {
     try {
         const { email, password } = req.body;
+<<<<<<< HEAD
         const user = await Mentor.findOne({email: email }).populate('student');
+=======
+        const user = await Mentor.findOne({email: email });
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
         if (!user) return res.status(400).json({msg: "User does not exist"});
 
         const isMatch = await bcrypt.compare(password, user.password);
@@ -106,14 +113,19 @@ export const login = async (req, res) => {
 export const getMentor = async (req, res) => {
     try {
         const { id } = req.params;
+<<<<<<< HEAD
         const mentor = await Mentor.findById(id).populate('student');
 
+=======
+        const mentor = await Mentor.findById(id);
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
         res.status(200).json(mentor);
     } catch (err) {
         res.status(404).json({message: err.message});
     }
 };
 
+<<<<<<< HEAD
 export const newStudent = async (req, res) => {
     try {
         const { id } = req.params;
@@ -126,3 +138,5 @@ export const newStudent = async (req, res) => {
         res.status(405).json({message: err.message})
     }
 }
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d

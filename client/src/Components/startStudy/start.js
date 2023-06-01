@@ -10,7 +10,11 @@ import comment from "../../img/commment.png";
 import stars from "../../img/stars.png";
 import "../../Styles/profile/profileMentor.css";
 import "../../Styles/profile/dycalendar.css";
+<<<<<<< HEAD
 import "../../Styles/startStudy/start.css";
+=======
+import "../../Styles/start/start.css";
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 // import dycalendar from  "../../Components/profile/dyCalendar.js";
 import Nav from "../main/Nav";
 
@@ -23,7 +27,10 @@ import Form from 'react-bootstrap/Form';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { StaticDateTimePicker } from '@mui/x-date-pickers/StaticDateTimePicker';
+<<<<<<< HEAD
 import axios from "axios";
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 const initialValues = {
     firstName: "",
@@ -38,7 +45,11 @@ const initialValues = {
     qualification: "",
     availableOnline: "",
   }
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 const StartStudy = () => {
     const [user, setUser] = useState(initialValues);
     const { userId } = useParams();
@@ -53,11 +64,19 @@ const StartStudy = () => {
         console.log(error);
       });
     }
+<<<<<<< HEAD
 
     useEffect(() => {
       getUser();
     }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+=======
+  
+    useEffect(() => {
+      getUser();
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
+  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     getUser();
     const {
       firstName,
@@ -73,7 +92,11 @@ const StartStudy = () => {
       description
     } = user;
 
+<<<<<<< HEAD
   return (
+=======
+  return ( 
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     <div className="wrapper-start-study">
     <Nav></Nav>
      <div class="wrapper-profileMentor">
@@ -88,7 +111,11 @@ const StartStudy = () => {
               <h2 class="under-head-title">
                 Ментор з {qualification}
               </h2>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
             </div>
           </div>
         </div>
@@ -112,7 +139,11 @@ const StartStudy = () => {
                   <Link to="/view-reminders">Нагадування</Link>
                 </div>
               </div>
+<<<<<<< HEAD
 
+=======
+              
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
               <div class="one-of-three-function">
                 <img class="note-div" src={noteIcon} alt="bell ring"/>
                 <div class="func-text">
@@ -156,11 +187,19 @@ const StartStudy = () => {
                     {city}, {country}
                     </li>
                   </ul>
+<<<<<<< HEAD
 
                 </li>
                 <li><strong>Вік:</strong>
                   <ul class="left">
                     <li class="sub">
+=======
+              
+                </li>
+                <li><strong>Вік:</strong>
+                  <ul class="left">
+                    <li class="sub"> 
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                       {age} років
                     </li>
                   </ul>
@@ -279,9 +318,15 @@ const StartStudy = () => {
               <div class="withbtn">
                 <div class="my-courses-block">
                  <div class="courses-content-all">
+<<<<<<< HEAD
 
                   <img class="courses-photo" src={childPhoto} alt="Swim courses"/>
 
+=======
+                
+                  <img class="courses-photo" src={childPhoto} alt="Swim courses"/>
+                
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                   <div class="content-section">
                     <div class="description-course-title">
                       Навчимо дитину плавати:
@@ -312,8 +357,13 @@ const StartStudy = () => {
               <button className="enroll-course">Записатись на курс</button>
 
               </div>
+<<<<<<< HEAD
 
 
+=======
+              
+  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
               </div>
             </div>
             {/* <div class="calendar-wrapper">
@@ -325,7 +375,11 @@ const StartStudy = () => {
               <div id="dycalendar"></div>
               <script src={dycalendar}></script>
               <script> {dycalendar.draw({
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                   target: '#dycalendar',
                   type: 'month',
                   highlighttargetdate: true,
@@ -435,22 +489,39 @@ const StartStudy = () => {
           </div>
           <div class="materials-content">
             <div class="button-container">
+<<<<<<< HEAD
               <a href="http://yourtesturl.com" class="button-container-material">
+=======
+              <a href="http://yourtesturl.com" class="button-container-material"> 
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                Тести
               </a>
             </div>
             <div class="button-container">
+<<<<<<< HEAD
               <a href="http://yourtesturl.com/" class="button-container-material">
+=======
+              <a href="http://yourtesturl.com/" class="button-container-material"> 
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                Відео
               </a>
             </div>
             <div class="button-container">
+<<<<<<< HEAD
               <a class="button-container-material"
               href="http://yourtesturl.com/" >
                Посібники
               </a>
             </div>
 
+=======
+              <a class="button-container-material" 
+              href="http://yourtesturl.com/" > 
+               Посібники
+              </a>
+            </div>
+          
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
           </div>
         </div>
         <div class="comments-section">
@@ -477,7 +548,11 @@ const StartStudy = () => {
                   <div class="comment">
                     Я дуже задоволений моєю менторкою. Вона є відмінним наставником, який не тільки допоміг мені знайти мою мету, але й надихнув на досягнення нових висот в моїй кар'єрі.
                   </div>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 </div>
               </div>
               <div class="comment-block-container">
@@ -494,7 +569,11 @@ const StartStudy = () => {
                   <div class="comment">
                     Мій викладач був дуже підтримуючий та стимулював мене до досягнення нових цілей. Його професійні знання та досвід допомогли мені розкрити свій потенціал та зробити успішну кар'єру. Я дуже вдячний йому за все, що він зробив для мене.
                   </div>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 </div>
               </div>
             </div>
@@ -514,7 +593,11 @@ const StartStudy = () => {
                   <div class="comment">
                     Викладачка з плавання - це найкраща, яка мені доводилось зустрічати. Вона дуже терпляча та відповідальна і завжди готова підтримати своїх учнів та допомогти їм зробити прогрес у воді.
                   </div>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 </div>
               </div>
               <div class="comment-block-container">
@@ -531,7 +614,11 @@ const StartStudy = () => {
                   <div class="comment">
                     Мої заняття з викладачкою з плавання були дуже пізнавальні та цікаві. Вона допомогла мені зрозуміти, які кроки потрібно зробити, щоб покращити своє плавання, та завжди надихала мене на нові досягнення. Я був дуже задоволений її роботою та рекомендую її всім.
                   </div>
+<<<<<<< HEAD
 
+=======
+                  
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 </div>
               </div>
             </div>
@@ -670,5 +757,10 @@ const StartStudy = () => {
     </div>
    );
 }
+<<<<<<< HEAD
 
 export default StartStudy;
+=======
+ 
+export default StartStudy;
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d

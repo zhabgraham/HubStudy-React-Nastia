@@ -200,8 +200,14 @@ p {
 .block-lessons {
   display: flex;
   flex-direction: row;
+<<<<<<< HEAD
   align-items: center;
   flex-wrap: wrap;
+=======
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   gap: 50px;
 }
 
@@ -211,7 +217,10 @@ p {
   border-radius: 16px;
   width: 379px;
   height: 523px;
+<<<<<<< HEAD
   cursor: pointer;
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 }
 
 .about-lesson {
@@ -303,7 +312,10 @@ p {
 
   .item-lessons {
     background: rgb(255 219 193);
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   }
 
   .block-tasks {
@@ -323,6 +335,7 @@ p {
   .contact-student {
     margin-left: 0;
   }
+<<<<<<< HEAD
 
 }
 
@@ -512,4 +525,6 @@ justify-content: space-between;
 .new-modal-continue-study:hover {
 background-color: black;
 color: white;
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 }

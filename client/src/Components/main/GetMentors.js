@@ -29,6 +29,10 @@ const GetMentors = () => {
       MentorsGet()
   }, [])
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   return (
       <Carousel>
           {mentor && mentor.map(

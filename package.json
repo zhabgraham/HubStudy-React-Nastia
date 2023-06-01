@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+<<<<<<< HEAD
     "@mui/material": "^5.13.3",
     "@mui/styled-engine-sc": "^5.12.0",
     "@mui/x-date-pickers": "^6.5.0",
@@ -24,10 +25,26 @@
     "jsonwebtoken": "^9.0.0",
     "lodash-es": "^4.17.21",
     "mongoose": "^7.2.2",
+=======
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bcrypt": "^5.1.0",
+    "body-parser": "^1.20.2",
+    "bootstrap": "^5.2.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "gridfs-stream": "^1.1.1",
+    "helmet": "^6.1.5",
+    "jsonwebtoken": "^9.0.0",
+    "mongoose": "^7.1.0",
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     "morgan": "^1.10.0",
     "multer": "^1.4.4",
     "multer-gridfs-storage": "^5.0.2",
     "react": "^18.2.0",
+<<<<<<< HEAD
     "react-bootstrap": "^2.7.4",
     "react-dom": "^18.2.0",
     "react-redux": "^8.0.7",
@@ -38,6 +55,13 @@
     "socket.io-client": "^4.6.2",
     "web-vitals": "^2.1.4",
     "yup": "^1.2.0"
+=======
+    "react-bootstrap": "^2.7.2",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "socket.io": "^4.6.1",
+    "web-vitals": "^2.1.4"
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   },
   "scripts": {
     "start": "react-scripts start",

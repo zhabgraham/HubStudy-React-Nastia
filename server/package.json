@@ -10,15 +10,22 @@
     "express": "^4.18.2",
     "gridfs-stream": "^1.1.1",
     "helmet": "^6.0.1",
+<<<<<<< HEAD
     "jest": "^29.5.0",
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.3",
     "morgan": "^1.10.0",
     "multer": "^1.4.4",
     "multer-gridfs-storage": "^5.0.2",
+<<<<<<< HEAD
     "socket.io": "^4.6.1",
     "supertest": "^6.3.3",
     "uuid": "^9.0.0"
+=======
+    "socket.io": "^4.6.1"
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   },
   "name": "server",
   "version": "1.0.0",
@@ -26,7 +33,10 @@
   "type": "module",
   "scripts": {
     "start": "nodemon index.js",
+<<<<<<< HEAD
     "testJest": "node --experimental-vm-modules node_modules/jest/bin/jest.js --detectOpenHandles",
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],

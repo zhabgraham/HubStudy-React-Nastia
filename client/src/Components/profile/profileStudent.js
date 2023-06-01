@@ -8,6 +8,7 @@ import notesIcon from "../../img/notes-icon.png";
 import chatIcon from "../../img/chat-icon.png";
 import swimming from "../../img/swimming.png";
 import axios from "axios"
+<<<<<<< HEAD
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 
@@ -18,6 +19,14 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import Form from 'react-bootstrap/Form';
 import { setLessons } from "../../state";
+=======
+
+import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import { useSelector } from "react-redux";
+import { useParams } from "react-router-dom";
+import Form from 'react-bootstrap/Form';
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 
 const initialValues = {
@@ -26,6 +35,7 @@ const initialValues = {
   email: ""
 }
 
+<<<<<<< HEAD
 const initialValuesLessons = {
   firstName: "",
   lastName: "",
@@ -56,6 +66,12 @@ const ProfileStudent = () => {
   const { userId } = useParams();
   const dispatch = useDispatch();
   const lesson = useSelector((state) => state.lesson)
+=======
+
+const ProfileStudent = () => {
+  const [user, setUser] = useState(initialValues);
+  const { userId } = useParams();
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   const token = useSelector((state) => state.token);
   const getUser = async () => {
     const studentResponse = await axios.get(`http://localhost:3001/student/${userId}`)
@@ -66,6 +82,7 @@ const ProfileStudent = () => {
     .catch(function (error) {
       console.log(error);
     });
+<<<<<<< HEAD
 
 
     const lessonsResponse = await axios.get(`http://localhost:3001/lesson?student=${userId}`)
@@ -109,12 +126,15 @@ const ProfileStudent = () => {
       )
       console.log(lesson)
     })
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   }
 
   useEffect(() => {
     getUser();
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
+<<<<<<< HEAD
   const {
     firstName,
     lastName,
@@ -125,6 +145,16 @@ const ProfileStudent = () => {
   return (
 
 
+=======
+  //getUser();
+  const {
+    firstName,
+    lastName,
+    email
+  } = user;
+
+  return (
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     <div className="container-profileStudent">
       <Nav></Nav>
       <div className="under-header">
@@ -150,9 +180,13 @@ const ProfileStudent = () => {
       <div class="main-profileStudent">
         <div className="sidebar">
           <div className="photoStudent">
+<<<<<<< HEAD
             {/* <img className="photoStudent-photo" width={300} src={`http://localhost:3001/assets/${picturePath}`} ></img> */}
             <img className="photoStudent-photo" width={300} src={photoStudent} ></img>
 
+=======
+            <img className="photoStudent-photo" width={300} src={photoStudent} ></img>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
           </div>
           <div className="content-sidebar">
             <div className="function-block">
@@ -167,10 +201,17 @@ const ProfileStudent = () => {
                   </div>
                 </Link>
                 <Link to="/view-notes">
+<<<<<<< HEAD
                   <div className="notes-profile">
                   <img width={30} src={notesIcon} ></img>
                     <p>Нотатки</p>
                   </div>
+=======
+                  <button className="notes-profile">
+                  <img width={30} src={notesIcon} ></img>
+                    <p>Нотатки</p>
+                  </button>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 </Link>
                 <div className="chat-profile">
                 <img width={30} src={chatIcon} ></img>
@@ -191,6 +232,7 @@ const ProfileStudent = () => {
             <div className="myLessons-student">
               <div className="myLessons-btn">Мої заняття</div>
               <div className="block-lessons">
+<<<<<<< HEAD
               {(lesson != null) && lesson.map((el, index) => {
                   return (
                     <>
@@ -221,6 +263,54 @@ const ProfileStudent = () => {
 
                   );
                 })}
+=======
+                <div className="item-lessons">
+                  <div className="photo-lesson">
+                    <img src={swimming} ></img>
+                  </div>
+                  <div className="about-lesson">
+                    <div>
+                      <h2 className="title-lesson">Підготовка до спортивних змагань:</h2>
+                    </div>
+                    <div>
+                      <p className="description-lesson">Змагання на носі, а ви не знаєте як до них підготуватись?</p>
+                    </div>
+                    <div className="durationPrice">
+                      <div>
+                        <p>Ціна заняття:</p>
+                        <p>350 грн</p>
+                      </div>
+                      <div>
+                        <p>Тривалість заняття:</p>
+                        <p>1,5 год</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="item-lessons">
+                  <div className="photo-lesson">
+                    <img src={swimming} ></img>
+                  </div>
+                  <div className="about-lesson">
+                    <div>
+                      <h2 className="title-lesson">Підготовка до спортивних змагань:</h2>
+                    </div>
+                    <div>
+                      <p className="description-lesson">Змагання на носі, а ви не знаєте як до них підготуватись?</p>
+                    </div>
+                    <div className="durationPrice">
+                      <div>
+                        <p>Ціна заняття:</p>
+                        <p>350 грн</p>
+                      </div>
+                      <div>
+                        <p>Тривалість заняття:</p>
+                        <p>1,5 год</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
               </div>
             </div>
             <div className="mytasks-student">
@@ -245,6 +335,7 @@ const ProfileStudent = () => {
           </div>
         </div>
       </div>
+<<<<<<< HEAD
       <Button onClick={() => setLgShow(true)}></Button>
 
       <Modal
@@ -362,6 +453,8 @@ const ProfileStudent = () => {
         </Modal.Body>
         <Modal.Footer className="footer-style-modal"></Modal.Footer>
       </Modal>
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     </div>
    );
 }

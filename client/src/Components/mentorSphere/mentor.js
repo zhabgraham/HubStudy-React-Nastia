@@ -119,7 +119,11 @@ const Mentor = () => {
               </button>
             </div>
             <div className="mentor-list">
+<<<<<<< HEAD
               <FilterMentors formData={formData}/>
+=======
+            <FilterMentors formData={formData}/>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
             </div>
           </div>
         </div>

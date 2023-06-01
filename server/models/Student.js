@@ -31,6 +31,7 @@ const StudentSchema = new mongoose.Schema(
         },
         picturePath: {
             type: String
+<<<<<<< HEAD
         },
 
     },
@@ -42,6 +43,10 @@ const StudentSchema = new mongoose.Schema(
           virtuals: true
         }
       }
+=======
+        }
+    }
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 )
 
 StudentSchema.virtual('note', {
@@ -51,6 +56,7 @@ StudentSchema.virtual('note', {
     justOne: false
   });
 
+<<<<<<< HEAD
 StudentSchema.virtual('lessons', {
     ref: 'Lessons',
     localField: '_id',
@@ -64,6 +70,8 @@ StudentSchema.virtual('lessons', {
     foreignField: 'student',
     justOne: false
   });
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 const Student = mongoose.model("Student", StudentSchema);
 
 export default Student;

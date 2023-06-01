@@ -8,12 +8,17 @@ import iconPencil from "../../img/pencil-icon.png";
 import reminderIcon from "../../img/reminder-icon.png";
 import reminderIconWithout from "../../img/without-sound.png";
 import swimming from "../../img/swimming.png";
+<<<<<<< HEAD
 import { useParams } from 'react-router-dom';
 import axios from 'axios'
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Form from 'react-bootstrap/Form';
 import { useSelector } from "react-redux";
+=======
+import { useSelector } from 'react-redux';
+import axios from 'axios'
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 
 const initialValues = {
@@ -22,6 +27,7 @@ const initialValues = {
   email: ""
 }
 
+<<<<<<< HEAD
 
 
 const ProfileStudentRedo = () => {
@@ -29,6 +35,17 @@ const ProfileStudentRedo = () => {
   const [user, setUser] = useState({});
   const user1 = useSelector((state) => state.user);
   const userId = user1._id;
+=======
+import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
+import Form from 'react-bootstrap/Form';
+
+const profileStudentRedo = () => {
+  const user = useSelector((state) => state.user);
+  const userId = user._id;
+  const [formData, updateFormData] = useState(initialValues);
+  const [setUser] = useState({});
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
   const handleChange = (e) => {
     updateFormData({
@@ -75,7 +92,11 @@ const ProfileStudentRedo = () => {
     lastName,
     email
   } = user;
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   console.log(userId);
 
   return (
@@ -132,7 +153,11 @@ const ProfileStudentRedo = () => {
                 <img src={iconPencil}></img>
                 </div>
                 <div>
+<<<<<<< HEAD
                 <input type="email" onChange={handleChange} name="email" id="emailStudent-input" placeholder="mentorivna1986@gmail.com" className="emailStudent"></input>
+=======
+                <input type="email" /*onChange={handleChange}*/ name="email2" id="emailStudent-input" placeholder="mentorivna1986@gmail.com" className="emailStudent"></input>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 <img src={iconPencil}></img>
                 </div>
               </div>
@@ -141,7 +166,11 @@ const ProfileStudentRedo = () => {
           <div class="sectionTwoStudentProfile">
             <div className="myLessons-student">
                 <div className="myLessons-btn">Мої заняття</div>
+<<<<<<< HEAD
                 <div className="block-lessons-redo">
+=======
+                <div className="block-lessons">
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                   <div className="item-lessons">
                     <div className="photo-lesson">
                       <img src={swimming} ></img>
@@ -216,4 +245,8 @@ const ProfileStudentRedo = () => {
    );
 }
 
+<<<<<<< HEAD
 export default ProfileStudentRedo;
+=======
+export default profileStudentRedo;
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d

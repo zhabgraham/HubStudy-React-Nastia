@@ -1,0 +1,1 @@
+npm i bcrypt body-parser bootstrap cors dotenv express gridfs-stream helmet jsonwebtoken mongoose morgan multer multer-gridfs-storage react react-bootstrap react-dom react-scripts socket.io web-vitals

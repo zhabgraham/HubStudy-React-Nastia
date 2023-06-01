@@ -12,8 +12,11 @@ import "../../Styles/profile/profileMentor.css";
 import "../../Styles/profile/dycalendar.css";
 // import dycalendar from  "../../Components/profile/dyCalendar.js";
 import Nav from "../../Components/main/Nav";
+<<<<<<< HEAD
 import { setMentor } from "../../state";
 import { setLessons } from "../../state";
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
@@ -25,13 +28,18 @@ import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { StaticDateTimePicker } from '@mui/x-date-pickers/StaticDateTimePicker';
 import axios from "axios";
+<<<<<<< HEAD
 import { useDispatch, useSelector } from "react-redux";
+=======
+
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 const initialValues = {
   firstName: "",
   lastName: "",
   email: ""
 }
 
+<<<<<<< HEAD
 const initialValuesLessons = {
   firstName: "",
   lastName: "",
@@ -62,21 +70,31 @@ const ProfileMentor = () => {
   const lesson = useSelector((state) => state.lesson)
   const { userId } = useParams();
   const dispatch = useDispatch();
+=======
+const ProfileMentor = () => {
+
+  const [user, setUser] = useState(initialValues);
+  const { userId } = useParams();
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   const getUser = async () => {
     const mentorResponse = await axios.get(`http://localhost:3001/mentor/${userId}`)
     .then(function (response) {
         const data = response.data;
         setUser(data);
+<<<<<<< HEAD
         dispatch(
           setMentor({
             user: data
           })
         )
         console.log(data)
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
     })
     .catch(function (error) {
       console.log(error);
     });
+<<<<<<< HEAD
 
     const lessonsResponse = await axios.get(`http://localhost:3001/lesson?student=${userId}`)
     .then(function (response) {
@@ -104,16 +122,23 @@ const ProfileMentor = () => {
     setSelectedLessonID(id);
 
 
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   }
 
   useEffect(() => {
     getUser();
+<<<<<<< HEAD
   },[]); // eslint-disable-line react-hooks/exhaustive-deps
+=======
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
 
   //getUser();
   const {
     firstName,
     lastName,
+<<<<<<< HEAD
     email,
     student
   } = user;
@@ -135,6 +160,11 @@ const ProfileMentor = () => {
     }, {});
   }
 
+=======
+    email
+  } = user;
+
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
   return (
     <>
     <Nav></Nav>
@@ -382,7 +412,10 @@ const ProfileMentor = () => {
               <div id="dycalendar"></div>
               <script src={dycalendar}></script>
               <script> {dycalendar.draw({
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                   target: '#dycalendar',
                   type: 'month',
                   highlighttargetdate: true,
@@ -391,21 +424,29 @@ const ProfileMentor = () => {
                 }
               </script>
             </div> */}
+<<<<<<< HEAD
 
+=======
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
             <div className='calendar'>
 <LocalizationProvider dateAdapter={AdapterDayjs}>
       <StaticDateTimePicker orientation="landscape" />
     </LocalizationProvider>
     </div>
             <div class="my-students-wrapper">
+<<<<<<< HEAD
               {(mentor.student[0]) && (
                 <div class="my-students-title-container">
+=======
+              <div class="my-students-title-container">
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
                 <div class="my-students-title-shape">
                   <div class="my-students-title-text">
                     Мої учні:
                   </div>
                 </div>
               </div>
+<<<<<<< HEAD
               )}
               <div class="my-students-list-container">
               {Object.values(uniqueStudents).slice(0, 4).map((el, index) => (
@@ -439,6 +480,79 @@ const ProfileMentor = () => {
                 </details>
               </div>
               )}
+=======
+              <div class="my-students-list-container">
+                <div class="block-student">
+                    <img class="student-photo"  src={studentOne} alt="Student"/>
+                    <ul class="student-text">
+                      <li class="student">
+                        Учень Учньович
+                      </li>
+                      <li class="student-email">uchnivskaposhta@gmail.com</li>
+                    </ul>
+                </div>
+                <div class="block-student">
+                  <img class="student-photo"  src={studentTwo} alt="Student"/>
+                  <ul class="student-text">
+                    <li class="student">
+                      Учень Учньович
+                    </li>
+                    <li class="student-email">uchnivskaposhta@gmail.com</li>
+                  </ul>
+                </div>
+                <div class="block-student">
+                  <img class="student-photo"  src={studentOne} alt="Student"/>
+                  <ul class="student-text">
+                    <li class="student">
+                      Учень Учньович
+                    </li>
+                    <li class="student-email">uchnivskaposhta@gmail.com</li>
+                  </ul>
+                </div>
+                <div class="block-student">
+                  <img class="student-photo"  src={studentTwo} alt="Student"/>
+                  <ul class="student-text">
+                    <li class="student">
+                      Учень Учньович
+                    </li>
+                    <li class="student-email">uchnivskaposhta@gmail.com</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="more-students-list">
+                {/* <details>
+                  <summary class="summary-btn">
+                  </summary> */}
+                  {/* <div class="block-student">
+                    <img class="student-photo" src={studentOne} alt="Student"/>
+                    <ul class="student-text">
+                      <li class="student">
+                        Учень Учньович
+                      </li>
+                      <li class="student-email">uchnivskaposhta@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="block-student">
+                    <img class="student-photo" src={studentTwo} alt="Student"/>
+                    <ul class="student-text">
+                      <li class="student">
+                        Учень Учньович
+                      </li>
+                      <li class="student-email">uchnivskaposhta@gmail.com</li>
+                    </ul>
+                  </div>
+                  <div class="block-student">
+                    <img class="student-photo" src={studentOne} alt="Student"/>
+                    <ul class="student-text">
+                      <li class="student">
+                        Учень Учньович
+                      </li>
+                      <li class="student-email">uchnivskaposhta@gmail.com</li>
+                    </ul>
+                  </div> */}
+                {/* </details> */}
+              </div>
+>>>>>>> 27a03b5ab2fa669f6c62c7ea7c54eba46c48f32d
             </div>
           </div>
       </div>
