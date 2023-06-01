@@ -1,0 +1,204 @@
+.reminder-bg {
+  background: linear-gradient(180deg, #BAB9FF 0%, #FFFFFF 200%);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.reminder-bg .nav{
+  width: 100%;
+  height: 104px;
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.reminder-wrapper, .createReminder-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  align-items: flex-start;
+  padding-bottom: 50px;
+}
+.createReminder-wrapper .top-title {
+  width: 100%;
+}
+.reminder-wrapper .left-side, .createReminder-wrapper .left-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.reminder-wrapper .right-side {
+  width: 80vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+.top-title {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.reminder-wrapper .top-title h1 {
+  font-weight: 400;
+font-size: 44px;
+line-height: 51px;
+}
+.reminder-wrapper .top-title button {
+  background: #FFDF3A;
+border-radius: 1000px;
+width: 276px;
+height: 48px;
+
+font-weight: 400;
+font-size: 24px;
+line-height: 28px;
+}
+.reminder-wrapper .content-block {
+  padding-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;
+
+  width: 1100px;
+  height: 1300px;
+  background: rgba(255, 255, 255, 0.7);
+border: 1px solid #A7A7A7;
+border-radius: 16px;
+}
+.reminder-wrapper .item-content {
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.reminder-wrapper .info h2 {
+  font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+}
+.reminder-wrapper .info p {
+  font-weight: 400;
+font-size: 18px;
+line-height: 21px;
+
+}
+
+/*-------------------------- createReminder----------------------- */
+.createReminder-wrapper {
+  padding: 150px;
+  justify-content: space-between;
+}
+.createReminder-wrapper .right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  width: 50vw;
+}
+.createReminder-wrapper #date {
+  background: #FFFFFF;
+border-radius: 1000px;
+width: 200px;
+height: 35px;
+padding: 10px;
+}
+.createReminder-wrapper .bottom-content {
+  width: 100%;
+  height: 580px;
+  background: rgba(255, 255, 255, 0.7);
+border: 1px solid #A7A7A7;
+border-radius: 16px;
+padding: 30px;
+}
+.createReminder-wrapper .content-create {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 20px;
+}
+.createReminder-wrapper .inform, .createReminder-wrapper .theme {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+}
+.createReminder-wrapper .inform h2, .createReminder-wrapper .theme h2, .createReminder-wrapper .details h2 {
+  font-weight: 700;
+font-size: 24px;
+line-height: 28px;
+}
+.createReminder-wrapper #theme {
+  width: 35vw;
+  background: #FFFFFF;
+border-radius: 1000px;
+height: 50px;
+}
+.createReminder-wrapper .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.createReminder-wrapper #details {
+  width: 42vw;
+  height: 280px;
+  padding: 40px;
+  background: #FFFFFF;
+border-radius: 16px;
+/* text-overflow: ellipsis; */
+}
+@media screen and (max-width: 420px) {
+  .createReminder-wrapper {
+    padding: 50px;
+    padding-top: 100px;
+
+    height: 1300px;
+  }
+  .createReminder-wrapper .right-side {
+    width: auto;
+  }
+  .reminder-wrapper .top-title {
+    flex-wrap: wrap;
+  }
+  .reminder-wrapper .content-block {
+    width: 600px;
+    height: auto;
+  }
+  .reminder-wrapper {
+    padding: 50px;
+    padding-top: 100px;
+    justify-content: space-between;
+  }
+  .reminder-wrapper .right-side {
+    width: auto;
+  }
+}
+.createReminder-wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 50px;
+}

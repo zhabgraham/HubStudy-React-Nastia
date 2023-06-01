@@ -1,0 +1,196 @@
+body {
+  /* max-width: 1440px;
+  margin: 0 auto; */
+  height: 715px;
+}
+
+.container_registration {
+  background: #BAB9FF;
+  height: 715px;
+  max-width: 1440px;
+  margin: 0 auto;
+
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.mentor-page {
+  height: 850px;
+}
+
+.title-register {
+  text-align: center;
+  padding-top: 136px;
+  font-size: 52px;
+  line-height: 60px;
+  color: #000000;
+}
+
+.paragraph-register {
+  text-align: center;
+  line-height: 28px;
+  color: #000000;
+
+  margin-top: 20px;
+}
+
+.form-register {
+  display: flex;
+  flex-direction: row;
+  /* flex-wrap: wrap;  */
+  justify-content: space-between;
+
+  max-width: 1235px;
+  margin: 0 auto;
+  margin-top: 33px;
+}
+
+.photo-register {
+  margin-right: 136px;
+}
+
+.upload-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.upload {
+  max-width: 385px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-form-register {
+  max-width: 850px;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.retreat:nth-child(odd) {
+  margin-right: 70px;
+  margin-bottom: 16px;
+}
+
+.mentorship-form-form {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.experience-number,
+.age-form {
+  width: 141px;
+  height: 56px;
+  background: #FFFFFF;
+  border-radius: 1000px;
+  text-align: center;
+}
+
+.mentorship-form-form .retreat:nth-child(3) {
+  margin-right: 0px;
+}
+
+.experience {
+  margin-right: 36px;
+}
+
+.buttons-registration {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.sign-up-form,
+.mentorship-form,
+.student-form {
+  width: 200px;
+  height: 45px;
+  background: #FFE146;
+  border-radius: 1000px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+}
+
+.sign-up-form {
+  margin-right: 50px;
+}
+
+.mentorship-form,
+.student-form {
+  background-color: white;
+}
+
+.mentorship-form:hover,
+.student-form:hover {
+  background: #FFE146;
+  transition: 1.2s;
+}
+
+.selection-form {
+  width: 320px;
+  height: 56px;
+  font-size: 18px;
+
+  padding: 14px 0px 14px 38px;
+  color: #000000;
+  /* background: #FFFFFF; */
+  border-radius: 1000px;
+}
+
+select {
+  /* ... */
+  /* padding: 8px; */
+  /* font-size: 18px;
+  color: #000000;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+}
+
+@media screen and (max-width: 420px) {
+  .form-register {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .form-form-register {
+    justify-content: center;
+  }
+
+  .photo-register {
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+
+  .container_registration {
+    height: 1305px;
+    background: rgb(255, 138, 48);
+  }
+
+  .offcanvas-backdrop.show {
+    opacity: 0;
+  }
+
+  .upload-photo-user {
+    width: 200px;
+    height: 200px;
+  }
+
+  .photo-register {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

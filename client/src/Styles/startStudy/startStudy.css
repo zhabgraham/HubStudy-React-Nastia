@@ -1,0 +1,86 @@
+body {
+  background: url('../../img/GRADIENT_MAINnotes-bg.png');
+}
+
+.page-start-study {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.page-start-study-wrapper {
+ display: flex;
+ justify-content: center;
+ margin: auto;
+ padding-top: 187px;
+ width: 525px;
+}
+
+.start-study-title {
+  font-size: 36px;;
+  text-align: center;
+  color: white;
+  margin-bottom: 18px;
+}
+
+.start-study-under-title-text {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.over-inputs-text {
+  font-size: 24px;
+  margin-bottom: 8px;
+}
+
+.input-start-study-style {
+  height: 56px;
+  border-radius: 1000px;
+  border:none;
+  margin-bottom: 10px;
+}
+
+.radio-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+
+.radio-button {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 16px;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.upper-buttons {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 182px;
+}
+
+.option {
+  color: black;
+  margin: 0;
+  margin-left: 8px;
+}
+
+.button-section-wrapper{
+  display: flex;
+  padding: 74px 45px;
+  justify-content: center;
+}
+
+.send-button{
+  background-color: #FFE146;
+  padding: 28px 76px;
+  border-radius: 1000px;
+}
+
+.send-button:hover{
+  background-color: #FFEC89;
+  color:323232;
+}

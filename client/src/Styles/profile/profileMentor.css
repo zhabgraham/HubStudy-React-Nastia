@@ -1,0 +1,606 @@
+* {
+  font-family: 'Ubuntu', sans-serif;
+
+}
+.wrapper-profileMentor {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+}
+
+.wrapper-profileMentor .header-example {
+  background-color: #F3F4FF ;
+  width: 100%;
+  height: 72px;
+  border-radius: 16px;
+  display: flex;
+}
+
+.wrapper-profileMentor .first-page {
+display: flex;
+flex-direction: column;
+flex-basis: 0;
+flex-wrap: wrap;
+}
+
+.wrapper-profileMentor .upper-section {
+  padding: 16px;
+  margin: 0;
+  background-color: #9A9FFF;
+  height: 300px;
+  padding-top:100px;
+}
+
+.wrapper-profileMentor .title-container {
+
+  margin: 0;
+
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-profileMentor .title-wrapper {
+  width: 100%;
+
+  position: relative;
+
+  /* margin: 76px auto; */
+
+  display: flex;
+ justify-content: center;
+
+}
+
+.wrapper-profileMentor .head-title {
+  font-weight: normal;
+  margin: 0;
+  text-align: left;
+}
+
+.wrapper-profileMentor .under-head-title {
+  font-weight: normal;
+  margin: 0;
+  color: white;
+  text-align: left;
+}
+
+
+.wrapper-profileMentor .button-edit {
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  appearance: button;
+  position:relative;
+  text-decoration: none;
+  color: black;
+  padding: 12px 16px;
+  border: none;
+  border-radius: 1000px;
+  background-color: #FFE146 ;
+  transition: 1.2s;
+}
+/* .wrapper-profileMentor .button-edit:hover {
+  transition: 1.2s;
+  background-color: #FFE146;
+} */
+.wrapper-profileMentor .button-edit:hover {
+  transition: 1.2s;
+  background-color: #FFEC89;
+  color: #323232;
+}
+.wrapper-profileMentor a {
+  color: black;
+}
+
+.wrapper-profileMentor .button-edit-wrapp {
+  display: flex;
+  margin-right: 54px;
+  flex-direction: row-reverse;
+}
+
+.wrapper-profileMentor .left-section{
+position: relative;
+background-color: #E2E4FF;
+border-radius: 1000px;
+/* width: 100%; */
+margin-right: 30px;
+/* margin-left: 64px; */
+bottom: 153px;
+flex-wrap: wrap;
+
+}
+
+
+.wrapper-profileMentor .photo-container {
+  background-color: rgb(255, 255, 255);
+  border-radius: 1000px;
+  border: 2px solid white;
+}
+
+.wrapper-profileMentor .photo-avatar{
+  border-radius: 1000px;
+  display: flex;
+  margin: auto;
+  width: 98%;
+}
+
+.wrapper-profileMentor .left-and-right {
+  display: flex;
+  gap: 12px;
+}
+
+
+.wrapper-profileMentor .description-container {
+  background-color: #E2E4FF;
+  width: 100%;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.wrapper-profileMentor .description-title {
+margin: 38px 30px 20px;
+font-size: 32px;
+}
+.wrapper-profileMentor .description-bio-content {
+  width: 100%;
+}
+.wrapper-profileMentor .courses-photo {
+
+  width: 359px;
+  height: 239px;
+  display: flex;
+  border-radius: 16px;
+}
+
+.wrapper-profileMentor .right-section {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  margin-right:70px;
+  flex-shrink: 0;
+  flex-basis: 1px;
+  z-index: 0;
+}
+
+.wrapper-profileMentor .my-courses-wrapper {
+  margin-top: 56px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-profileMentor .my-courses-blocks-container{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 12px;
+}
+
+.wrapper-profileMentor .my-courses-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #E2E4FF;
+  width: 379px;
+  border-radius: 16px;
+}
+
+.wrapper-profileMentor .courses-content-all {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  padding: 16px 9px;
+}
+@media (min-width: 1290px) {
+  .wrapper-profileMentor .my-courses-blocks-container{
+    flex-direction: row;
+  }
+}
+
+.wrapper-profileMentor .my-courses-title {
+  font-size: 32px;
+  padding-bottom: 36px;
+}
+
+.wrapper-profileMentor .description-course-title {
+  display: flex;
+  font-size: 24px;
+  margin: 20px 0 47px 0;
+}
+
+.wrapper-profileMentor .description-of-description-content {
+  margin: 0;
+  margin-bottom: 47px;
+}
+
+.wrapper-profileMentor .price-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+
+.wrapper-profileMentor .duration-section {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper-profileMentor .calendar-wrapper {
+
+  margin: 68px 0;
+  background-color: #E2E4FF;
+}
+
+.wrapper-profileMentor .calendar-title-container {
+  border-radius: 1000px;
+  margin: 10px;
+  background-color: #9A9FFF;
+  display: flex;
+  width: 312px;
+}
+
+
+.wrapper-profileMentor .calendar-title-text {
+  color:white;
+  padding: 5px;
+}
+
+.my-students-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.my-students-title-container {
+  display: flex;
+}
+
+.my-students-title-shape {
+  background-color: #9A9FFF;
+  width: 200px;
+  border-radius: 0 1000px 1000px 0;
+}
+
+.my-students-title-text {
+  padding: 18px;
+  padding-right: 44px;
+  color: white;
+}
+
+.my-students-list-container {
+  margin: 40px 0;
+}
+
+.block-student {
+  display: flex;
+  margin-bottom: 16px;
+  background-color: #E2E4FF;
+  border-radius: 16px;
+}
+
+.student {
+  list-style: none;
+  margin-bottom: 16px;
+}
+
+.student-email {
+  color: grey;
+  list-style: none;
+}
+
+.student-text {
+  padding: 0 30px;
+}
+
+.summary-btn {
+  align-items: center;
+}
+
+ .student-photo {
+  border-radius: 1000px;
+  margin: 6px 0 6px 40px;
+}
+
+.wrapper-profileMentor .second-page {
+  width: 100%;
+  display: flex;
+flex-direction: column;
+flex-basis: 0;
+flex-wrap: wrap;
+}
+
+.wrapper-profileMentor .materials-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-profileMentor .material-title-wrapper {
+ display:flex;
+}
+
+.wrapper-profileMentor .materials-title-shape {
+  background-color: #9A9FFF;
+  width: 200px;
+  border-radius: 0 1000px 1000px 0;
+}
+
+.wrapper-profileMentor .materials-title-text {
+  padding: 18px;
+  padding-right: 44px;
+  color: white;
+}
+
+.wrapper-profileMentor .materials-content{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 12px;
+
+}
+
+@media (min-width: 1290px) {
+  .wrapper-profileMentor .materials-content{
+
+    flex-direction: row;
+  }
+}
+
+
+
+.wrapper-profileMentor .tests-container{
+  background-color: #E2E4FF;
+  margin: 15px;
+  width: 324px;
+  height: 122px;
+}
+.wrapper-profileMentor .video-container {
+  background-color: #E2E4FF;
+  margin: 15px;
+  width: 324px;
+  height: 122px;
+}
+
+.wrapper-profileMentor .container{
+  border-radius: 16px;
+  background-color: #E2E4FF;
+  margin: 15px;
+  width: 324px;
+  height: 122px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+
+.wrapper-profileMentor .button-container{
+  background-color: #E2E4FF;
+  width: 200px;
+  height: 100px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 16px;
+  margin: 40px;
+}
+
+.wrapper-profileMentor .button-container-material{
+  text-decoration: none;
+  justify-content: center;
+  padding: 20px;
+  margin: auto;
+}
+
+.comments-section {
+
+
+  display: flex;
+  flex-direction: column;
+}
+
+.comments-title-section{
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.comments-title-shape {
+  background-color: #9A9FFF;
+  width: 200px;
+  border-radius: 0 1000px 1000px 0;
+}
+
+ .comments-title-text {
+  padding: 18px;
+  padding-right: 44px;
+  color: white;
+}
+
+ .comments-container{
+  margin: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+.comment-block-container{
+  width: 400px;
+background-color: #E2E4FF;
+
+border-radius: 16px;
+display: flex;
+justify-content:center;
+margin: 40px 40px;
+}
+
+ .comment-content {
+display: flex;
+flex-direction: column;
+padding: 40px;
+}
+
+ .first-block {
+  display: flex;
+  flex-direction: row;
+
+
+}
+
+
+.comment-upper-section{
+  display:flex;
+  flex-direction: row;
+  gap: 37px;
+}
+
+.name-rate-container {
+  display: flex;
+  flex-direction: column;
+
+}
+
+ .name-of-commentator{
+  font-size: 28px;
+}
+
+
+ .comment{
+  margin-top: 44px;
+  font-size: 18px;
+line-height: 22px;
+}
+
+.avatar-comentator{
+  border-radius: 1000px;
+}
+
+.wrapper-profileMentor .functions-container {
+  margin-top: 34px;
+}
+
+.wrapper-profileMentor .functions-title {
+  display: flex;
+}
+
+.wrapper-profileMentor .functions-title-shape{
+
+  background-color: #9A9FFF;
+  width: 174px;
+  display: flex;
+  margin-bottom: 40px;
+  border-radius: 0 1000px 1000px 0;
+}
+
+.wrapper-profileMentor .functions-title-text {
+  color:white;
+  font-size: 24px;
+  margin: 18px 64px 18px 20px;
+}
+
+.wrapper-profileMentor .three-functions-container{
+margin: auto;
+}
+.wrapper-profileMentor .one-of-three-function{
+  display: flex;
+  flex-wrap: wrap;
+   text-align: left;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin: 30px;
+}
+
+.wrapper-profileMentor .func-text {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  margin-left: 20px;
+}
+
+.wrapper-profileMentor a:link {
+  text-decoration: none;
+}
+
+.wrapper-profileMentor .about-me-container {
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper-profileMentor .about-me-title-container{
+  display:flex;
+}
+
+.wrapper-profileMentor .about-me-title-shape {
+  background-color: #9A9FFF;
+
+  display: flex;
+  margin-bottom: 40px;
+  border-radius: 0 1000px 1000px 0;
+}
+
+.wrapper-profileMentor .about-me-title-text {
+  display:flex;
+  flex-direction: column;
+  color:white;
+  font-size: 24px;
+  margin:  18px 64px 18px 20px;
+}
+
+.wrapper-profileMentor .about-me-content-container {
+
+  margin: 0 40px;
+}
+.wrapper-profileMentor .sub{
+  margin: 10px;
+  list-style: none;
+  font-size: 18px;
+}
+
+.wrapper-profileMentor .left{
+  margin: auto;
+  padding: 5px;
+}
+
+.wrapper-profileMentor .contacts-container {
+  display:flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.wrapper-profileMentor .contacts-title-container {
+  display: flex;
+}
+
+.wrapper-profileMentor .contacts-title-shape {
+background-color: #9A9FFF;
+display: flex;
+margin-bottom: 40px;
+border-radius: 0 1000px 1000px 0;
+}
+
+.wrapper-profileMentor .contacts-title-text {
+
+  display:flex;
+  flex-direction: column;
+  color:white;
+  font-size: 24px;
+  margin:  18px 64px 18px 20px;
+}
+
+.wrapper-profileMentor strong{
+  font-size: 24px;
+}
+.wrapper-profileMentor .contacts-content-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.wrapper-profileMentor .email-ul {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+}

@@ -1,0 +1,79 @@
+.section-1 {
+  padding: 164px 80px 136px 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+.section-1-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.main-title {
+  max-width: 560px;
+  font-size: 100px;
+  line-height: 115px;
+  color: #FFFFFF;
+
+  margin-bottom: 100px;
+}
+
+.main-paragraph {
+  max-width: 715px;
+  line-height: 28px;
+  color: #000000;
+
+  margin: 0px 0px 28px 28px;
+}
+
+.main-buttons {
+  padding-left: 24px;
+  font-size: 20px;
+}
+
+.button {
+  width: 236px;
+  height: 48px;
+  border-radius: 1000px;
+  padding: 10px 24px;
+  background: none;
+}
+
+.startStudyingOne {
+  background: #FFFFFF;
+  margin-right: 25px;
+}
+
+.becomeMentorOne {
+  border: 2px solid #FFFFFF;
+}
+
+.images {
+}
+
+.imageSection-1 {
+  height: 500px;
+  width: 500px;
+}
+
+.startStudyingOne:hover {
+  background-color: #9A9FFF;
+  transition: 1.2s;
+}
+
+
+@media screen and (max-width: 420px) {
+  .imageSection-1 {
+    width: 300px;
+    height: 300px;
+  }
+  .section-1-info {
+    max-width: 400px;
+  }
+  .startStudyingOne {
+    margin-bottom: 30px;
+  }
+}

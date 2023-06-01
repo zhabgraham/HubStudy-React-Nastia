@@ -1,0 +1,116 @@
+.sectionBio {
+  width: 100%;
+  height: 250px;
+  background: #E2E4FF;
+  border-radius: 16px;
+  padding: 35px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+#bio {
+  width: 100%;
+  height: 100%;
+  word-wrap: break-word;
+}
+
+.bio,
+.emailStudent {
+  text-overflow: ellipsis;
+}
+
+.container-profileStudentRedo .header-sphere {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #E2E4FF;
+  border-radius: 0px 1000px 1000px 0;
+  width: 100%;
+  height: 200px;
+}
+
+.container-profileStudentRedo .header-sphere div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#location {
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.aboutMeMentor {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 420px) {
+  .container-profileStudentRedo .my-students-title-shape {
+  background-color: #ff8a30;
+  color: white;
+  }
+  .block-student {
+  background-color: #ffdbc1;
+  }
+}
+.container-profileStudentRedo .block-student {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@media screen and (max-width: 420px) {
+  .container-profileStudentRedo .about {
+    background-color: rgb(255 219 193);
+    border: none;
+    margin-top: 20px;
+  }
+
+  .sectionBio {
+    background: rgb(255 219 193);
+    margin-left: 35px;
+  }
+}
+.container-profileStudentRedo .function-btn {
+  margin-left: 0;
+}
+.container-profileStudentRedo .header-sphere {
+  margin-left: 0;
+}
+
+/* .container-profileStudentRedo .block-lessons div {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+} */
+.container-profileStudentRedo .block-lessons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 25px;
+}
+.container-profileStudentRedo .calendar {
+  max-width: 800px;
+}
+.container-profileStudentRedo #bio {
+  padding: 20px;
+}
+.container-profileStudentRedo #withSound, .container-profileStudentRedo #withoutSound {
+  cursor: pointer;
+  border: 1px solid white;
+  background-color: transparent;
+  border-radius: 20px;
+  width: 180px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

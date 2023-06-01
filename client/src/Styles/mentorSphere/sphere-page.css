@@ -1,0 +1,43 @@
+.sphere-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.sphere-item {
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 16px;
+  width: 700px;
+  height: 100px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-bottom: 30px;
+}
+
+.paragraph_sphere-item {
+  font-size: 28px;
+  line-height: 44px;
+  color: #000000;
+
+  padding-left: 40px;
+}
+
+.container_spherePage .sphere-button {
+  background-color: #939BFF;
+}
+
+.container_spherePage .rating-button {
+  background-color: #ffffff;
+}
+
+.container_spherePage .sphere-button:hover {
+  background-color: #ffffff;
+}
+
+.container_spherePage .rating-button:hover {
+  background-color: #939BFF;
+}
